@@ -185,31 +185,19 @@ const languageStrings = {
       SKILL_NAME: 'American Unix Helper'
     },
   },
+  'en-IN': {
+    translation: {
+      RECIPES: recipes.RECIPE_EN_US,
+      SKILL_NAME: 'Unix Helper'
+    },
+  },
   'en-GB': {
     translation: {
       RECIPES: recipes.RECIPE_EN_GB,
       SKILL_NAME: 'British Unix Helper'
     },
-  },
-  de: {
-    translation: {
-      RECIPES: recipes.RECIPE_DE_DE,
-      SKILL_NAME: 'Assistent für Unix in Deutsch',
-      WELCOME_MESSAGE: 'Willkommen bei %s. Zum Beispiel können Sie die Frage stellen: Wie installiere ich ein %s? ... Nun, wie kann ich dir helfen?',
-      WELCOME_REPROMPT: 'Wenn du wissen möchtest, was du sagen kannst, sag einfach „Hilf mir“.',
-      DISPLAY_CARD_TITLE: 'Unix Helper - um %s zu installieren.',
-      HELP_MESSAGE: 'Zum Beispiel können Sie Fragen stellen wie "Wie installiere ich% s" oder Sie können "Quit" sagen ... Wie kann ich Ihnen helfen?',
-      HELP_REPROMPT: 'Zum Beispiel können Sie Fragen stellen wie "Wie installiere ich% s" oder Sie können "Quit" sagen ... Wie kann ich Ihnen helfen?',
-      STOP_MESSAGE: 'Auf Wiedersehen!',
-      RECIPE_REPEAT_MESSAGE: 'Sage einfach „Wiederholen“.',
-      RECIPE_NOT_FOUND_MESSAGE: 'Tut mir leid, ich kenne derzeit ',
-      RECIPE_NOT_FOUND_WITH_ITEM_NAME: 'das Rezept für %s nicht. ',
-      RECIPE_NOT_FOUND_WITHOUT_ITEM_NAME: 'dieses Rezept nicht. ',
-      RECIPE_NOT_FOUND_REPROMPT: 'Womit kann ich dir sonst helfen?'
-    },
-  },
+  }
 };
-
 // Finding the locale of the user
 const LocalizationInterceptor = {
   process(handlerInput) {
@@ -233,7 +221,7 @@ function getRandomItem(arrayOfItems) {
   let i = 0;
   i = Math.floor(Math.random() * arrayOfItems.length);
   return (arrayOfItems[i]);
-};
+}
 
 /* LAMBDA SETUP */
 exports.handler = skillBuilder

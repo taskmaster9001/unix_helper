@@ -1,0 +1,8 @@
+arch linux,
+arch,
+x server,
+desktop environment,
+dependency,
+package,
+" linux package",
+linux,

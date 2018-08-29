@@ -1,0 +1,155 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "unix helper",
+            "intents": [{
+                    "name": "LinuxHelper",
+                    "slots": [{
+                        "name": "Item",
+                        "type": "LIST_OF_ITEMS"
+                    }],
+                    "samples": ["how can I {Item}",
+                        "how can you {Item}",
+                        "how do I {Item}",
+                        "how do you {Item}",
+                        "how should I {Item}",
+                        "how should one {Item}",
+                        "how should you {Item}",
+                        "tell me the steps to {Item}",
+                        "tell me how to {Item}",
+                        "how to {Item}",
+                        "steps to {Item}",
+                        "procedure to {Item}",
+                        "way to {Item}",
+                        "a way to {Item}",
+                        "what is {Item}",
+                        "what is the meaning of {Item}",
+                        "What exactly is a {Item}",
+                        "What exactly is an {Item}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "replay that",
+                        "play again",
+                        "speak again",
+                        "say that again",
+                        "repeat it",
+                        "I ask you to repeat",
+                        "please say that again",
+                        "what did you say",
+                        "repeat that please"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help me",
+                        "what can you do",
+                        "what to do",
+                        "how can you help",
+                        "how to use this skill",
+                        "how do you turn this on",
+                        "what does this do",
+                        "help",
+                        "help me please"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "okay stop",
+                        "please stop",
+                        "not another word",
+                        "shush",
+                        "pause",
+                        "stop it",
+                        "stop speaking",
+                        "stop "
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel my command"
+                    ]
+                }
+            ],
+            "types": [{
+                "name": "LIST_OF_ITEMS",
+                "values": [{
+                        "name": {
+                            "value": "dot tar dot B Z"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "dot tar dot G Z"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "dot tar files"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "python package"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "network manager"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "ubuntu"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "arch linux"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "arch"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "x server"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "desktop environment"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "dependency"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "package"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": " linux package"
+                        }
+                    },
+                    {
+                        "name": {
+                            "value": "linux"
+                        }
+                    }
+                ]
+            }]
+        }
+    }
+}
